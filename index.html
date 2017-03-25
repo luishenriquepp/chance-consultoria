@@ -6,185 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Márcio Pacheco Consultoria</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
 </head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Logo and responsive toggle -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                	<span class="glyphicon glyphicon-equalizer"></span> 
-                	Márcio Pacheco Consultoria
-                </a>
-            </div>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-						<ul class="dropdown-menu" aria-labelledby="about-us">
-							<li><a href="#">Sobre</a></li>
-							<li><a href="#">Serviços</a></li>
-							<li><a href="#"></a></li>
-						</ul>
+<body ng-app="myApp">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<span class="glyphicon glyphicon-equalizer"></span> 
+					Márcio Pacheco Consultoria
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#!/servicos">Serviços</a>
 					</li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container -->
-    </nav>
-
-	<!-- Feature -->
+					<li>
+						<a href="#!/sobre">Sobre</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	<div class="jumbotron feature">
 		<div class="container">
 			<h1><span class="glyphicon glyphicon-flash"></span> Consultoria Empresarial</h1>
 			<p>Alavanque seus negócios com consultoria empresarial</p>
-			<p><a class="btn btn-primary" href="#">Engage Now</a></p>
 		</div>
 	</div>
-
-
-    <!-- Heading -->
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="text-center">Márcio Pacheco</h1>
-                <p class="lead text-center">O consultor empresarial Márcio Pacheco nasceu em Siderópolis em 16/01/1967,
-					 filho de Otávio Pacheco e Eloide Borges Pacheco e criou-se em Criciúma-SC, tendo estudado Filosofia bacharelado na UFSC,
-					 em Florianópolis, Direito na Univale e formado em Tecnologia em Gestão Comercial na UNESC, em Criciúma-SC.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Promos -->
-	<div class="container-fluid">
-        <div class="row promo">
-        	<a href="#">
-				<div class="col-md-4 promo-item item-1">
-					<h3>Sobre</h3>
-				</div>
-            </a>
-            <a href="#">
-				<div class="col-md-4 promo-item item-2">
-					<h3>Serviços</h3>
-				</div>
-            </a>
-			
-			<a href="#">
-				<div class="col-md-4 promo-item item-3">
-					<h3>Procrastinate</h3>
-				</div>
-            </a>
-        </div>
-    </div><!-- /.container-fluid -->
-	
-	<div class="container text-center">
-		<h1>Especialização</h1>
-		<p class="lead">
-			Com pós-graduação em Consultoria Empresarial no Senai Florianópolis,
-			 defendeu recentemente o TCC com o artigo: <strong>Empreendedorismo no Brasil</strong>: Realidade, Influências e Tendências em Tempos de Crise Econômica.
-		</p>
-		<img class="img-responsive img-circle center-block" src="images/foto-perfil-cortada.jpg" alt="">
-	</div><!--/.container-->
-	
-		
-	<!-- Footer -->
-	<footer>
-	
-		<h1 class="text-center">Find Us</h1>
-		<!-- Map -->
-		<div class="footer-map"></div>	
-			
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 footer-info-item text-center">
-						<p class="lead">
-							31 Spooner Street, Quahog, Rhode Island
-						</p>
-						<h2>Entre em contato</h2>
-						<p class="lead"><span class="glyphicon glyphicon-phone-alt"></span> +1(23) 456 7890<br>
-						marciopacheconsultorempresas@gmail.com</p>
-					</div>
-				</div>
-			</div>
-
-		<!-- Footer Links -->
-		<div class="footer-info">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4 footer-info-item">
-						<h3>Information</h3>
-						<ul class="list-unstyled">
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Customer Service</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Sitemap</a></li>
-							<li><a href="#">Orders &amp; Returns</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-4 footer-info-item">
-						<h3>My Account</h3>
-						<ul class="list-unstyled">
-							<li><a href="#">Sign In</a></li>
-							<li><a href="#">View Cart</a></li>
-							<li><a href="#">My Wishlist</a></li>
-							<li><a href="#">Track My Order</a></li>
-							<li><a href="#">Help</a></li>
-						</ul>	
-					</div>
-					<div class="col-sm-4 footer-info-item">
-						<h3><span class="glyphicon glyphicon-list-alt"></span> Newsletter</h3>
-						<p>Sign up for exclusive offers.</p>
-						<div class="input-group">
-							<input type="email" class="form-control" placeholder="Enter your email address">
-							<span class="input-group-btn">
-								<button class="btn btn-primary" type="button">
-									Subscribe!
-								</button>
-							</span>
-						</div>
-					</div>
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-        </div>
-        
-        <!-- Copyright etc -->
-        <div class="small-print">
-        	<div class="container">
-        		<p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
-        		<p>Copyright &copy; Example.com 2015 </p>
-        	</div>
-        </div>
-        
-	</footer>
-
-	
-    <!-- jQuery -->
+	<div ng-view></div>
     <script src="js/jquery-1.11.3.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-	
+    <script src="js/bootstrap.min.js"></script>	
 	<!-- IE10 viewport bug workaround -->
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
-	
+	<script>
+		var app = angular.module("myApp", ["ngRoute"]);
+		app.config(function($routeProvider) {
+			$routeProvider
+			.when("/", {
+				templateUrl : "section.html"
+			})
+			.when("/artigo", {
+				templateUrl : "article.html"
+			})
+			.when("/servicos", {
+				templateUrl : "services.html"
+			})
+			.when("/sobre", {
+				templateUrl : "about.html"
+			});
+		});
+		app.controller(function($scope) {
+
+		});
+	</script>
 </body>
 
 </html>
