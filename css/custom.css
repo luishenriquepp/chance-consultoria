@@ -63,43 +63,15 @@ h6 {
 .feature .btn {
 	text-shadow: none;
 }
-	
-.promo, .footer-map {
-	border-width: 1px;
-	border-color: black;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	margin-top: 20px;
-	margin-bottom: 20px;
+
+.an {
+  color: #dd845a;
 }
 
-.promo,
-.promo h3,
-.promo a:link,
-.promo a:visited,
-.promo a:hover,
-.promo a:active {
-    color: white;
-	text-shadow: 1px 1px 8px black;
-    text-decoration: none;
-}
-
-.promo-item {
-    height: 200px;
-    line-height: 180px;
-    text-align: center;
-}
-
-.promo-item:hover {
-    background-size: 110%; 
-    border: 5px solid black;
-    line-height: 170px;
-}
-
-.promo-item h3 {
-    font-size: 40px;
-    display: inline-block;
-    vertical-align: middle;
+.an:hover {
+  text-decoration: none;
+  color: indianred;
+  text-shadow: 1px 1px 3px black;
 }
 	
 /*
@@ -109,15 +81,15 @@ Override Bootstrap Classes
 */
 
 /* Links */
-a {
+/*a {
   color: orange;
   text-decoration: none;
-}
-a:hover,
+}*/
+/*a:hover,
 a:focus {
   color: darkorange;
   text-decoration: underline;
-}
+}*/
 
 /* Navbar */
 .navbar-default {
@@ -190,4 +162,8 @@ fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
   background-color: sandybrown;
   border-color: sandybrown;
+}
+
+.jumbotron {
+  margin-bottom: 15px;
 }
