@@ -167,3 +167,7 @@ fieldset[disabled] .btn-primary.active {
 .jumbotron {
   margin-bottom: 15px;
 }
+
+.well {
+    background: ghostwhite;
+}
